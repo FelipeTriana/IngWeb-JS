@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JSExercices</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <!-- <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">  --> 
+       <link rel="stylesheet" href="./css/bootstrap.min.css">  
+    </head>
+    
+    <body>
+    <!--El formulario del panagrama-->    
+    <div class="card">
+        <div class="container text-center py-5">
+            <h5>Inserta una frase:</h5><br>
+            <input id="frase" type="text">
+            <p id="resultado1"></p>
+            <button id="boton1"  class="btn btn-danger" onclick="panagrama()">¿Es panagrama?</button>
+        </div>
+    </div>
+    <!--El formulario para comprobar si un año es bisiesto-->   
+    <div class="card">
+        <div class="container text-center py-5">
+            <h5>Inserta un año:</h5><br>
+            <input id="ano" type="text">
+            <p id="resultado2"></p>
+            <button id="boton2"  class="btn btn-danger" onclick="bisiesto()">¿Es bisiesto?</button>
+        </div>
+    </div>
+    <!--Recibe una lista de elementos y retorna una lista con los elementos NO UNICOS-->   
+    <div class="card">
+        <div class="container text-center py-5">
+            <h5>Ingrese la lista de elementos separados por comas:</h5><br>
+            <input id="lista" type="text">
+            <p id="resultado3"></p>
+            <button id="boton3"  class="btn btn-danger" onclick="unicos()">Elementos NO unicos</button>
+        </div>
+    </div>
+    <!--Convierte numeros enteros a numeros romanos-->   
+    <div class="card">
+        <div class="container text-center py-5">
+            <h5>Ingrese un numero entero:</h5><br>
+            <input id="numero" type="text">
+            <p id="resultado4"></p>
+            <button id="boton4"  class="btn btn-danger" onclick="romanNumerals()">Convertir a número romano</button>
+        </div>
+    </div>
+        
+        <script src="./src/ejercicios.js" async defer></script> 
+    </body>
+</html>
+
